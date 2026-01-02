@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Punnet Squares</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="practice1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="layout">
+        <nav class="active" id="nav">
+        <ul>
+            <li><a href="practice.html" id="needsPad">Home</a></li>
+            <li><a href="#" class="lessPad"><b>Artificial Selection</b></a></li>
+            <li><a href="#" class="lessPad">Hardy-Weinberg</a></li>
+        <li><a href="#" class="lessPad">DNA Sequences</a></li>
+        </ul>
+        <button class="icon" id="toggle">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+        </button>
+        </nav>
+        <div id="sim">
+          <h> </h>          
+          <div id="starting">
+            <div class="box">
+              <p>Color</p>  <!--Multiple Alleles & Incomplete Dominance-->
+              <select class="geno" name="color1" required>
+                <option value="r">Cᴿ</option>
+                <option value="y">Cʸ</option>
+                <option value="b">Cᴮ</option>
+               </select>
+               <select class="geno" name="color2" required>
+                <option value="b">Cᴮ</option>
+                <option value="y">Cʸ</option>
+                <option value="r">Cᴿ</option>
+               </select>
+              <p>Patterns</p> <!--Codominant-->
+              <select class="geno" name="pattern1" required>
+                <option value="P">P</option>
+                <option value="p">p</option>
+               </select>
+               <select class="geno" name="pattern2" required>
+                <option value="p">p</option>
+                <option value="P">P</option>
+               </select>
+              <p>Masking</p> <!--Masking-->
+              <select class="geno" name="mask1" required>
+                <option value="M">M</option>
+                <option value="m">m</option>
+               </select>
+               <select class="geno" name="mask2" required>
+                <option value="m">m</option>
+                <option value="M">M</option>
+               </select>
+              <p>Fang Disability</p> <!--Sex Linked-->
+              <select class="geno" name="fang1" required>
+                <option value="F">F</option>
+                <option value="f">f</option>
+               </select>
+               <select class="geno" name="fang2" required>
+                <option value="f">f</option>
+                <option value="F">F</option>
+               </select>
+              <p>Horn Length</p> <!--Mendelian-->
+              <select class="geno" name="horn1" required>
+                <option value="H">H</option>
+                <option value="h">h</option>
+               </select>
+               <select class="geno" name="horn2" required>
+                <option value="h">h</option>
+                <option value="H">H</option>
+               </select>
+            </div>
+            <div id="stack">
+              <canvas id="dragonCanvas"></canvas>
+              <img src="Pattern_B.sketchpad.png" class="pattern">
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
